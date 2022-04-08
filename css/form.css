@@ -1,0 +1,105 @@
+
+	--first-color: #1A73E8; 
+	--second-color: #80868B;
+	--border-color: #DADCE0;
+
+*,::before,::after{
+	box-sizing: border-box;
+}
+form{
+	position: absolute;
+	border-radius: 1rem;
+	margin-left: 10px;
+	padding-left: 5px;
+	width: 90%;
+	height: 47%;
+	margin-top: 50%;
+	background-color: #fff;
+}
+.form-div{
+	position: relative;
+	height: 25px;
+	margin-bottom: 1.5rem;
+}
+.form-input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 90%;
+	font-size: .8rem;
+	border: 1px solid #DADCE0;
+	border-radius: .5rem;
+	outline: none;
+	padding: 5px;
+	margin-top: 20px;
+	background: none;
+	z-index: 1;
+}
+.form-label{
+	position: absolute;
+	padding: 0 .25rem ;
+	margin-top: 20px;
+	left: 10px;
+	top: 5px;
+	background-color: #fff;
+	color: #80868B;
+	transition: .3s;
+}
+.form-input:focus + .form-label{
+	top: -.5rem;
+	left: .8rem;
+	color:  #1A73E8;
+	font-weight: 500;
+	z-index: 10;
+}
+.form-input:not(:placeholder-shown).form-input:not(:focus)+ .form-label{
+	top: -.5rem;
+	left: .8rem;
+	font-weight: 500;
+	z-index: 10;
+}
+.form-input:focus{
+	border: 1.5px solid #1A73E8;
+}
+
+/*------------------form button---------------------*/
+
+.button{
+	float: left;
+	bottom: 10%;
+	top: 85%;
+	margin-left: 15px;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	outline: 2px solid #fff;
+	overflow: hidden;
+	color: #fff;
+	background: none;
+	transition: color 1s;
+	position: relative;
+}
+.button:hover{
+	color: #1A73E8;
+	background-color: #e9e9e9;
+
+	
+}
+.button::before{
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: -50px;
+	width: 0;
+	height: 100%;
+	background-color: #e9e9e9;
+	transform: skewX(35deg);
+	z-index: -1;
+	transition: width 1s;
+}
+.button:hover::before{
+	width: 150%;
+}

@@ -1,0 +1,40 @@
+body{
+	background-color: #e9e9e9;
+	font-family: Arial, sans-serif;
+}
+main{
+	top: 3%;
+	width: 100%;
+	z-index: 0;
+}
+/*section{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 20px;
+}*/
+.section1{
+	width: 25%;
+	float: left;
+}
+.section{
+	width: 25%;
+	float: right;
+}
+.section{
+	width: 25%;
+	float: right;
+}
+.section{
+	width: 25%;
+	float: right;
+}
+.footer{
+	display: flex;
+	width: 100%;
+	height: 5vh;
+	border-radius: .75rem;
+	background-color: #333;
+}
+.footer .footer-title{
+	margin-bottom: 10px;
+}

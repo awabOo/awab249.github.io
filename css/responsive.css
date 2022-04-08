@@ -1,0 +1,46 @@
+@media screen and (max-width: 1080px){
+	.section1{
+		width: 50%;
+		height: 700px;
+		float: left;
+	}
+	.section{
+		width: 50%;
+		height: 700px;
+		float: right;
+	}
+}
+@media screen and (max-width: 912px){
+	.section1{
+		width: 50%;
+		float: left;
+	}
+	.section{
+		width: 50%;
+		float: right;
+	}
+	.section .card{
+	margin-left: 3%;
+	}
+	.section1 .card1{
+	margin-left: 3%;
+	}
+}
+@media screen and (max-width: 414px){
+	.section1{
+		width: 100%;
+		float: left;
+	}
+	.section{
+		width: 100%;
+		float: right;
+	}
+	.section .card{
+	width: 99%;
+	margin-left: .5%;
+	}
+	.section1 .card1{
+	width: 99%;
+	margin-left: .5%;
+	}
+}
